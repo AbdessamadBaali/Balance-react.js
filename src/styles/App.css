@@ -1,0 +1,72 @@
+body {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1.5px;
+    padding: 2rem;
+}
+#root {
+    min-width: 500px;
+    border: 1px solid gainsboro;
+    padding: 1rem;
+    box-shadow: 1px 2px 10px gainsboro;
+    background-image: linear-gradient(45deg, gainsboro,#dcdcdcc5, #dcdcdc68);
+} 
+
+#balance {
+    font-weight: bold;
+    color : gold;
+    -webkit-text-stroke: .5px #232323;
+    text-shadow: 1px 2px 10px #615757ab;
+}
+#encomeExpenses
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white; 
+    padding: 1em;
+    box-shadow: 1px 2px 10px #00000062;
+}
+#encomeExpenses div:nth-child(1)
+{
+  position: relative;
+}
+#encomeExpenses div:nth-child(1)::after
+{
+    content: '';
+    height: 100%;
+    border: 1px solid #80808061;
+    position: absolute;
+    top: 0;
+    right: -100%;
+}
+#income{   color: green;}
+#expense{   color: red;}
+.history {   margin-top: 15px;}
+.list li{
+    background-color: white;
+    list-style: none;
+    padding: 0.5em;
+    margin-bottom: 8px;
+    border-right: 3px solid green ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.list li button{
+    position: absolute;
+    left: -30px;
+    background-color: white;
+    color: red;
+    border: none;
+    padding: 0.5em;
+    transition: ease-in-out .35s;
+}
+.list li:hover button{
+    background-color: red;
+    color: white;
+}
